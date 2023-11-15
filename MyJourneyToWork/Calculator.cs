@@ -53,7 +53,7 @@ namespace Calculator
         public TransportModes transportMode { get; set; }
 
         //Ensure that distance is in miles for calculation
-        private double convertDistance()
+        public double convertDistance()
         {
             if (milesOrKms.Equals(DistanceMeasurement.kms))
                 return this.distance / 1.609344;
